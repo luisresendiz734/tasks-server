@@ -1,0 +1,41 @@
+POST http://localhost:4001/users/register HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Alan",
+  "email": "alan@example.com",
+  "password": "pass123"
+}
+
+###
+GET http://localhost:4001/users HTTP/1.1
+
+###
+POST http://localhost:4001/users/login HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "alan@example.com",
+  "password": "pass123"
+}
+
+###
+GET http://localhost:4001/tasks/AWFNm4diQf HTTP/1.1
+
+###
+POST http://localhost:4001/tasks HTTP/1.1
+Content-Type: application/json
+
+{
+  "userId": "AWFNm4diQf",
+  "text": "Learn more english"
+}
+
+###
+PUT http://localhost:4001/tasks HTTP/1.1
+Content-Type: application/json
+
+{
+  "id": "Xso1TK0Eh5",
+  "text": "this is amazing"
+}
